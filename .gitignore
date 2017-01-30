@@ -1,0 +1,5 @@
+/node_modules
+/typings
+/client/app/js
+/server/js
+/.vscode
