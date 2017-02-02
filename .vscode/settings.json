@@ -6,8 +6,8 @@
     "files.autoSave": "afterDelay",
     "files.exclude": {
        "**/.git": true,
-       "client/app/*.js.map": true,
-       "client/app/*.js": true,
+       "client/app/**/.js.map": true,
+       "client/app/**/*.js": true,
        "server/**/*.js.map": true,
        "server/**/*.js": true
       }
