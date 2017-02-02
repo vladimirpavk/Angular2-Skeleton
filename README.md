@@ -1,4 +1,4 @@
-# ExpressTSAngular2
+# Angular2 Skeleton - new libs
 Node, Express, TypeScript, Gulp, BrowserSync, Angular2 application skeleton.
 
 Provided for developing **Angular2** applications using **Typescript** served over **node-express** server.
@@ -21,22 +21,20 @@ Start application with
 $ gulp
 ```
 
-Application will be initialy compiled and started. By default the server is listening on port 3036. Browser synchronization is configured in proxy mode. Client application (Angular2) can be accessed through your web browser on the following url **localhost:3036/angular**. If everything is ok you should see the message *"My Second Angular App"*. displayed in your browser.
+Application will be initialy compiled and started. By default the server is listening on port 3036. Client application (Angular2) can be accessed through your web browser on the following url **localhost:3036/angular**. If everything is ok you should see the message *Proba*. displayed in your browser.
 
 ### Under the hood
 
-**Server application** in *typescript* is located in **./server/ts** files folder. 
+**Server application** in *typescript* and transpiled application are located in **./server** folder. Build application using **gulp** build system. 
 
-Folder **./server/js** contains transpiled server application and is populated by gulp build system. Folder contains files needed for deployment. Server application is compiled whenever you make changes to any file in **./server/ts** folder.
+**Server application** is **node-express** web server initialy configured to listen for requests on **localhost:3036**. All request are redirected to SPA Angular2 application.
 
-**Server application** is **node-express** web server initialy configured to listen for requests on **localhost:3036/angular**. 
+BrowserSync is proxing from **localhost:3000**.   
 
 
-**Client application** in *typescript* is located in **./client/app/ts** files folder.
+**Client application** in *typescript* and transpiled application are located in **./client/app** folder.
 
-Folder **./client/app/js** (reach with /js) contains transpiled client application and is populated by gulp build system. Folder contains files needed for deployment. Client application is compiled whenever you make changes to any file in **./client/app/ts** folder. 
-
-Folder **./client/app/ts** (reach with /ts) contains following files
+Folder **./client/app/** contains following *TypeScript* files
 
 ```
 app.component.ts
