@@ -41,7 +41,8 @@ gulp.task('watch_server_changes', ['browser_sync_server'], function(){
 gulp.task('watch_server', ['watch_server_changes'], function(){
     console.log("Watching server");
     return nodemon({
-    script: './server/index.js'
+    script: './server/index.js',
+    ignore: ['./client'],
         })
         .on('start', function(){
             console.log("Nodemon started on index.js....");    
