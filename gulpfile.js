@@ -61,11 +61,11 @@ gulp.task('watch_server', ['watch_server_changes'], function(){
 gulp.task('compile_client_app', function(){
   
     console.log('Compiling client application...');
-    return gulp.src(['./client/app/**/*.ts'])
+    return gulp.src(['client/app/**/*.ts'])
         .pipe(gulpSm.init())
         .pipe(tsProject_client())
         .pipe(gulpSm.write('./'))
-        .pipe(gulp.dest('./client/app'));    
+        .pipe(gulp.dest('client/app'));    
 })
 
 gulp.task('browser_sync', ['compile_client_app'], function(){
@@ -73,11 +73,11 @@ gulp.task('browser_sync', ['compile_client_app'], function(){
 });
 
 gulp.task('watch_client', ['compile_client_app'], function(){
-    return gulp.watch(['./client/app/**/*.ts'], ['browser_sync']);
+    return gulp.watch(['client/app/**/*.ts'], ['browser_sync']);
 });
 
 gulp.task('watch_client_html', function(){  
-    return gulp.watch(['./client/app/**/*.html'], ['browser_sync']);
+    return gulp.watch(['client/app/**/*.html'], ['browser_sync']);
 });
 //***********************************************************************
 
