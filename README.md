@@ -42,3 +42,13 @@ app.module.ts
 main.ts
 ```
 taken from the official Angular2 web page quickstart https://angular.io
+
+### History
+- changed *server_app.ts*:
+1. **_renderPage** method to
+```
+private _renderPage(req: express.Request, res: express.Response){ 
+        res.sendFile(path.resolve(__dirname, '../client'+req.params[0]));
+    }
+```
+2. no more /www configured from server
