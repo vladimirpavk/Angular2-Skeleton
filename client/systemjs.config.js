@@ -33,10 +33,7 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      },
-      commoncomponents: {
-        defaultExtension: 'js'
-      }  
+      }
     }
   });
 })(this);
