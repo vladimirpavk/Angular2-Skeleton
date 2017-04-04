@@ -8,7 +8,7 @@ import { Ng2Bs3ModalModule } from 'modalcomponent';
 @NgModule({
   imports:      [ 
                   BrowserModule,
-                  //CommonComponentsModule
+                  CommonComponentsModule,
                   Ng2Bs3ModalModule 
                 ],
   declarations: [ AppComponent ],
