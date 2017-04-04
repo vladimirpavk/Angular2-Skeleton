@@ -23,7 +23,8 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // other libraries
       'rxjs': 'npm:rxjs',
-      'commoncomponents': 'npm:ng2-flashbox/commoncomponents.module.js'
+      'commoncomponents': 'npm:ng2-flashbox/commoncomponents.module.js',
+      'modalcomponent': 'npm:ng2-bs3-modal'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -32,6 +33,10 @@
         defaultExtension: 'js'
       },
       rxjs: {
+        defaultExtension: 'js'
+      },
+      modalcomponent: {
+        main: './ng2-bs3-modal.js',
         defaultExtension: 'js'
       }
     }
